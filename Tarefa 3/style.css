@@ -81,8 +81,7 @@ header p{
   text-align: center;
 }
 
-
-button:hover{
+.meu-botao:hover{
     background:#355fd4;
 }
 
