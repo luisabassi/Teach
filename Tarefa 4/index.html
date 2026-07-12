@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Músicas dos Engenheiros do Hawaii</h1>
+    </header>
+
+    <div class="musica">
+        <div class="box">
+            <h2> Pra ser sincero </h2>
+            <p>
+                Pra ser sincero não espero de você <br>
+                Mais do que educação <br>
+                Beijo sem paixão<br>
+                Crime sem castigo<br>
+                Aperto de mãos<br>
+                Apenas bons amigos<br>
+                Pra ser sincero não espero que você<br>
+                Minta<br>
+                Não se sinta capaz de enganar<br>
+                Quem não engana a si mesmo<br>
+                Nós dois temos os mesmos defeitos<br>
+                Sabemos tudo a nosso respeito<br>
+                Somos suspeitos de um crime perfeito<br>
+                Mas crimes perfeitos não deixam suspeitos<br>
+            </p>
+
+              <button onclick="window.location.href='https://www.youtube.com/watch?v=a-w6tZX2Ono';" class="meu-botao botao-musica"> Ouça no YouTube </button>
+        </div>
+
+        <div class="box">
+            <h2>Piano-bar</h2>
+               <p> O fogo ilumina muito por muito pouco tempo <br>
+                (Muito pouco tempo) <br>
+                Em muito pouco tempo o fogo apaga tudo <br>
+                E tudo um dia vira luz<br>
+                Toda vez que falta luz<br>
+                O invisível nos salta aos olhos<br>
+                Ontem à noite, eu conheci uma guria<br>
+                Já era tarde, era quase dia<br>
+                Era o princípio de um precipício<br>
+                Era o meu corpo que caía<br>
+                Ontem à noite, a noite tava fria<br>
+                Tudo queimava, nada aquecia<br>
+                Ela apareceu, parecia tão sozinha<br>
+                Parecia que era minha aquela solidão<br> </p>
+
+                <button onclick="window.location.href='https://www.youtube.com/watch?v=DhSTu_hWbt8';" class="meu-botao botao-musica"> Ouça no YouTube </button>
+
+        </div>
+
+        <div class="box">
+            <h2> Refrão de Bolero</h2>
+            <p>
+                Eu que falei "nem pensar" <br> 
+                Agora me arrependo, roendo as unhas <br> 
+                Frágeis testemunhas<br> 
+                De um crime sem perdão<br> 
+                Mas eu falei "nem pensar"<br> 
+                Coração na mão, como refrão de bolero<br> 
+                Eu fui sincero, eu fui sincero<br> 
+                Teus lábios são labirintos<br> 
+                Que atraem os meus instintos mais sacanas<br> 
+                Teu olhar sempre me engana<br> 
+                É o fim do mundo todo dia da semana<br> 
+                Teus lábios são labirintos <br>
+                Que atraem os meus instintos mais sacanas <br>
+            </p>
+
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=NDzH1lb1rcE';" class="meu-botao botao-musica"> Ouça no YouTube </button>
+        </div>
+    </div>
+
+    <button class="meu-botao" id="botao1" onclick="mudarCor()"> Clique aqui para mudar a cor dos botões</button>
+
+    <footer>
+        <h3> ©2026 - Engenheiros do Hawaii  </h3>
+    </footer>
+</body>
+</html>
+
+<script>
+    function mudarCor() {
+
+    const letras = '0123456789ABCDEF';
+    let cor = '#';
+
+    for (let i = 0; i < 6; i++) {
+        cor += letras[Math.floor(Math.random() * 16)];
+    }
+
+    const botoes = document.querySelectorAll('.botao-musica');
+
+    botoes.forEach(botao => {
+        botao.style.backgroundColor = cor;
+    });
+}
+</script>
