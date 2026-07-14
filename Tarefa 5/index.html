@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora"> 
+            <table>
+                <tr> 
+                    <td colspan = 4>
+                        <input type="text" id="display" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <button class="calculadoraBotoes" onclick="clearDisplay()" id="cleanDisplay"> C </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="deleteNumber()" id="deleteDigit" > CE </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="percentage()" id="porcentagem"> %</button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendOperator('/')" id="divisao"> &divide </button> </td>
+                <tr>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('7')"> 7 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('8')"> 8 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('9')"> 9 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendOperator('*')" id="multiplicacao"> &times </button></td>
+                </tr>
+                <tr>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('4')"> 4 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('5')"> 5</button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('6')"> 6 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendOperator('-')" id="subtracao" value="-"> - </button></td>
+                </tr>
+                <tr>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('1')"> 1 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('2')"> 2 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendNumber('3')"> 3 </button></td>
+                    <td> <button class="calculadoraBotoes" onclick="appendOperator('+')"id="soma" value="+"> + </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button class="calculadoraBotoes" id="num0" onclick="appendNumber('0')"> 0 </button></td>
+                    <td><button class="calculadoraBotoes" id="point" onclick="appendOperator('.')">.</button></td>
+                    <td> <button class="calculadoraBotoes" value="=" onclick="calculate()" id="resultado"> = </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
