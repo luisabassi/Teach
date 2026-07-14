@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <h2> Lista de Tarefas</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Adicione sua tarefa">
+                <input type="date" id="input-data" placeholder="Digite a data de criação">
+                <button onclick="adicionarTarefa()"> Adicionar </button>
+            </div>
+
+            <ul id="listaContainer">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
