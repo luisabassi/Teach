@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie PetShop</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">Jolie PetShop</h1>
+
+            <ul class="menu">
+                <li><a href="index.html#inicio">Página Inicial</a></li>
+                <li><a href="index.html#cadastro-login">Cadastro</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="loja.html">Loja</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="metade-esquerda" id="inicio">
+
+            <img src="../img/logo.png" alt="Logo Jolie PetShop" onerror="this.style.display='none'">
+
+            <div class="post">
+
+                <h2>Bem-vindo!</h2>
+
+                <p>
+                    A Jolie PetShop é um espaço dedicado ao cuidado,
+                    bem-estar e felicidade dos animais de estimação.
+                    Trabalhamos com muito carinho para oferecer serviços
+                    e produtos de qualidade para que cães e gatos tenham
+                    uma vida mais saudável e confortável.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="metade-direita" id="cadastro-login">
+
+            <div class="cadastro">
+
+                <form id="form-cadastro" novalidate>
+
+                    <p class="passo-indicador">Etapa 1 de 2 - Seus dados</p>
+
+                    <h2>Cadastro do Cliente</h2>
+
+                    <label for="nome">Nome Completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required>
+
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(51) 99999-9999"
+                        required>
+
+                    <label for="endereco">Endereço</label>
+                    <input
+                        type="text"
+                        id="endereco"
+                        name="endereco"
+                        placeholder="Rua, número e bairro"
+                        required>
+
+                    <button type="submit">
+                        Continuar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Jolie PetShop © 2026 - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

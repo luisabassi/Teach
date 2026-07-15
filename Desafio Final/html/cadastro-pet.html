@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie PetShop - Dados do Pet</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">Jolie PetShop</h1>
+
+            <ul class="menu">
+                <li><a href="index.html#inicio">Página Inicial</a></li>
+                <li><a href="index.html#cadastro-login">Cadastro</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="loja.html">Loja</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="metade-esquerda" id="inicio">
+
+            <img src="img/logo.png" alt="Logo Jolie PetShop" onerror="this.style.display='none'">
+
+            <div class="post">
+
+                <h2>Quase lá!</h2>
+
+                <p>
+                    Falta só uma etapa. Agora conte pra gente sobre o seu
+                    pet para finalizarmos o cadastro na Jolie PetShop.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="metade-direita">
+
+            <div class="cadastro">
+
+                <form id="form-cadastro-pet" novalidate>
+
+                    <p class="passo-indicador">Etapa 2 de 2 - Dados do pet</p>
+
+                    <h2>Dados do Animal</h2>
+
+                    <label for="nomeAnimal">Nome do Animal</label>
+                    <input
+                        type="text"
+                        id="nomeAnimal"
+                        name="nomeAnimal"
+                        placeholder="Nome do pet"
+                        required>
+
+                    <label for="idadeAnimal">Idade</label>
+                    <input
+                        type="number"
+                        id="idadeAnimal"
+                        name="idadeAnimal"
+                        min="0"
+                        placeholder="Ex.: 3"
+                        required>
+
+                    <label for="porte">Porte</label>
+
+                    <select id="porte" name="porte" required>
+                        <option value="">Selecione</option>
+                        <option>Pequeno</option>
+                        <option>Médio</option>
+                        <option>Grande</option>
+                    </select>
+
+                    <label for="data">Data do Atendimento</label>
+
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                        required>
+
+                    <a href="index.html#cadastro-login" class="btn-voltar-link">Voltar e corrigir meus dados</a>
+
+                    <button type="submit">
+                        Concluir Cadastro
+                    </button>
+
+                    <p class="msg-sucesso" id="msg-sucesso">Cadastro realizado com sucesso!</p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Jolie PetShop © 2026 - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

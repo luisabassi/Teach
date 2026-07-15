@@ -1,0 +1,512 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Nunito",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fdfbf8;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:#c49b66;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:2rem;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#fff2d7;
+    color:#8a5a2b;
+}
+
+/* CONTEÚDO */
+
+.container{
+    display:flex;
+    min-height:100vh;
+    margin-top:78px;
+}
+
+/* LADO ESQUERDO */
+
+.metade-esquerda{
+    width:50%;
+    background:#fff2d7;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px;
+}
+
+.metade-esquerda img{
+    width:320px;
+    max-width:80%;
+    margin-bottom:35px;
+}
+
+.post{
+    max-width:520px;
+    background:#dccaa4;
+    padding:25px;
+    border-radius:18px;
+    text-align:justify;
+    line-height:1.7;
+}
+
+.post h2{
+    text-align:center;
+    color:#8a5a2b;
+    margin-bottom:15px;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+}
+
+/* LADO DIREITO */
+
+.metade-direita{
+    width:50%;
+    background:#b29973;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+/* FORMULÁRIO */
+
+.cadastro{
+    width:100%;
+    max-width:470px;
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+}
+
+.cadastro form{
+    display:flex;
+    flex-direction:column;
+}
+
+.cadastro h2{
+    color:#8a5a2b;
+    text-align:center;
+    margin:15px 0;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+}
+
+.cadastro label{
+    margin-bottom:6px;
+    font-weight:700;
+}
+
+.cadastro input,
+.cadastro select{
+    padding:12px;
+    margin-bottom:16px;
+
+    border:2px solid #dccaa4;
+    border-radius:8px;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.cadastro input:focus,
+.cadastro select:focus{
+    border-color:#c49b66;
+}
+
+.cadastro button{
+    margin-top:10px;
+
+    padding:14px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#c49b66;
+
+    color:#fff;
+
+    font-size:1rem;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.cadastro button:hover{
+    background:#8a5a2b;
+}
+
+.passo-indicador{
+    text-align:center;
+    margin-bottom:6px;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    color:#c49b66;
+}
+
+.btn-voltar-link{
+    margin-top:6px;
+    text-align:center;
+    font-size:.9rem;
+    font-weight:700;
+    color:#8a5a2b;
+    text-decoration:underline;
+}
+
+.btn-voltar-link:hover{
+    color:#c49b66;
+}
+
+.msg-sucesso{
+    display:none;
+    margin-top:14px;
+    text-align:center;
+    background:#e4f3df;
+    color:#3d7a2b;
+    font-weight:700;
+    padding:12px;
+    border-radius:8px;
+}
+
+.msg-sucesso.ativo{
+    display:block;
+}
+
+/* FOOTER */
+
+footer{
+    background:#c49b66;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-weight:600;
+}
+
+/* TÍTULO DE PÁGINA (clientes / loja) */
+
+.titulo-pagina{
+    text-align:center;
+    color:#8a5a2b;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+    font-size:2.2rem;
+    margin-bottom:35px;
+}
+
+/* PÁGINA CLIENTES */
+
+.pagina-clientes{
+    max-width:1200px;
+    margin:auto;
+    padding:110px 30px 60px;
+    min-height:100vh;
+}
+
+.grid-clientes{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:22px;
+}
+
+.card-cliente{
+    background:#fff2d7;
+    border:2px solid #dccaa4;
+    border-radius:16px;
+    padding:24px;
+    text-align:center;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.card-cliente:hover{
+    transform:translateY(-4px);
+    border-color:#c49b66;
+    box-shadow:0 10px 20px rgba(138,90,43,.15);
+}
+
+.card-cliente .icone-pata{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.card-cliente h3{
+    color:#8a5a2b;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+    font-size:1.3rem;
+    margin-bottom:8px;
+}
+
+.card-cliente p{
+    font-weight:600;
+    color:#555;
+}
+
+.vazio{
+    display:none;
+    text-align:center;
+    font-weight:600;
+    color:#8a5a2b;
+    margin-top:40px;
+    font-size:1.1rem;
+}
+
+.vazio.ativo{
+    display:block;
+}
+
+/* MODAL */
+
+.modal-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(51,38,20,.55);
+    z-index:2000;
+
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-overlay.ativo{
+    display:flex;
+}
+
+.modal{
+    background:#fff;
+    max-width:460px;
+    width:100%;
+    border-radius:18px;
+    padding:35px;
+    position:relative;
+    max-height:85vh;
+    overflow-y:auto;
+}
+
+.modal-fechar{
+    position:absolute;
+    top:14px;
+    right:18px;
+    background:none;
+    border:none;
+    font-size:1.8rem;
+    line-height:1;
+    color:#8a5a2b;
+    cursor:pointer;
+}
+
+.modal h2{
+    color:#8a5a2b;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+    text-align:center;
+    margin-bottom:20px;
+    padding-right:20px;
+}
+
+.modal-corpo p{
+    padding:10px 0;
+    border-bottom:1px solid #f0e6d2;
+    line-height:1.5;
+}
+
+.modal-corpo p:last-child{
+    border-bottom:none;
+}
+
+.modal-corpo strong{
+    color:#8a5a2b;
+}
+
+/* PÁGINA LOJA */
+
+.pagina-loja{
+    max-width:1200px;
+    margin:auto;
+    padding:110px 30px 60px;
+    min-height:100vh;
+}
+
+.grid-produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:22px;
+}
+
+.card-produto{
+    background:#fff;
+    border:2px solid #dccaa4;
+    border-radius:16px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.25s;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-produto:hover{
+    transform:translateY(-4px);
+    border-color:#c49b66;
+    box-shadow:0 10px 20px rgba(138,90,43,.15);
+}
+
+.card-produto img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    background:#fff2d7;
+}
+
+.card-produto .info-produto{
+    padding:16px;
+    text-align:center;
+}
+
+.card-produto h3{
+    color:#8a5a2b;
+    font-size:1.1rem;
+    margin-bottom:8px;
+    font-family:"Lilita One",cursive;
+    font-weight:normal;
+}
+
+.card-produto .preco{
+    font-weight:800;
+    color:#3d7a2b;
+    font-size:1.15rem;
+}
+
+/* TOAST */
+
+.toast{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%) translateY(20px);
+    background:#3d7a2b;
+    color:#fff;
+    padding:16px 26px;
+    border-radius:10px;
+    font-weight:700;
+    opacity:0;
+    pointer-events:none;
+    transition:.35s;
+    z-index:3000;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.toast.ativo{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+        margin-top:130px;
+    }
+
+    .metade-esquerda,
+    .metade-direita{
+        width:100%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:10px;
+        align-items:center;
+    }
+
+    .metade-esquerda img{
+        width:240px;
+        margin-top: -30%;
+
+    }
+
+    .cadastro{
+        max-width:100%;
+    }
+
+    .pagina-clientes,
+    .pagina-loja{
+        padding-top:170px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .grid-clientes,
+    .grid-produtos{
+        grid-template-columns:1fr;
+    }
+
+}

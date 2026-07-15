@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie PetShop - Clientes</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">Jolie PetShop</h1>
+
+            <ul class="menu">
+                <li><a href="index.html#inicio">Página Inicial</a></li>
+                <li><a href="index.html#cadastro-login">Cadastro</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="loja.html">Loja</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="pagina-clientes">
+
+        <h2 class="titulo-pagina">Clientes Cadastrados</h2>
+
+        <div class="grid-clientes" id="grid-clientes">
+            <!-- Cards de clientes inseridos via JavaScript -->
+        </div>
+
+        <p class="vazio" id="vazio-clientes">Nenhum cliente cadastrado ainda.</p>
+
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal-fechar" id="modal-fechar" aria-label="Fechar">&times;</button>
+            <h2 id="modal-nome-animal">Nome do Animal</h2>
+            <div class="modal-corpo" id="modal-corpo">
+                <!-- Detalhes inseridos via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Jolie PetShop © 2026 - Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
